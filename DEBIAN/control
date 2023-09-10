@@ -1,0 +1,10 @@
+Package: hello-deb
+Version: 1.0.0
+Section: BioInfoServ
+Priority: optional
+Depends:
+Suggests:
+Architecture: amd64
+Installed-Size: 4096
+Maintainer: WYT
+Description: This is a test deb package.
