@@ -23,6 +23,7 @@ build-deb:
 	mkdir -p release/$(NAME)-$(VERSION)/usr/local/bin
 	mkdir -p release/$(NAME)-$(VERSION)/etc/hello-deb
 	cp -r DEBIAN release/$(NAME)-$(VERSION)/
+	chmod -R 755 release/$(NAME)-$(VERSION)/
 	cp -r etc/*.json release/$(NAME)-$(VERSION)/etc/hello-deb/
 	GOOS=linux go build -o release/$(NAME)-$(VERSION)/usr/local/bin/${NAME}
 	dpkg-deb --build release/$(NAME)-$(VERSION)
