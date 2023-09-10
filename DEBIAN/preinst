@@ -1,0 +1,7 @@
+# !/bin/sh
+
+echo "[I] preinst script start..."
+
+pwd
+
+echo "[I] preinst script done..."
