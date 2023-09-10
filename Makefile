@@ -18,7 +18,7 @@ build-go:
 	go build -o $(NAME)
 
 build-deb:
-	which -s dpkg-deb || { echo "dpkg-deb not exist, exit ..."; exit 1; }
+	which dpkg-deb || { echo "dpkg-deb not exist, exit ..."; exit 1; }
 	mkdir release/$(NAME)-$(VERSION)
 	mkdir -p release/$(NAME)-$(VERSION)/usr/local/bin
 	mkdir -p release/$(NAME)-$(VERSION)/etc/hello-deb
