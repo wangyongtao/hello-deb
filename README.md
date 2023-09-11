@@ -1,8 +1,8 @@
 # hello-deb
 
-> Debian is an operating system and a distribution of Free Software. 
-> deb is the format, as well as filename extension of the software package format for the Debian Linux distribution and its derivatives.
-> dpkg provides the basic functionality for installing and manipulating Debian packages. 
+> Debian is an operating system and a distribution of Free Software.   
+> deb is the format, as well as filename extension of the software package format for the Debian Linux distribution and its derivatives.  
+> dpkg provides the basic functionality for installing and manipulating Debian packages.  
 
 
 Build Debian Package Demo 
