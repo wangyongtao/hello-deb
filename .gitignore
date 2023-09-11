@@ -22,5 +22,5 @@ go.work
 
 .idea/
 
-release/
+# release/
 *-cli
