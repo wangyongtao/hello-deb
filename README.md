@@ -61,3 +61,8 @@ Errors:
   dpkg-deb: error: maintainer script 'preinst' has bad permissions 644 (must be >=0555 and <=0775)  
 
   chmod -R 755 hello_deb/DEBIAN/
+
+
+run :
+  
+  ./hello-deb-cli 
