@@ -25,5 +25,8 @@ build-deb:
 	cp -r DEBIAN release/$(NAME)-$(VERSION)/
 	chmod -R 755 release/$(NAME)-$(VERSION)/
 	cp -r etc/*.json release/$(NAME)-$(VERSION)/etc/hello-deb/
-	GOOS=linux go build -o release/$(NAME)-$(VERSION)/usr/local/bin/${NAME}
+	GOOS=linux go build -o release/$(NAME)-$(VERSION)/usr/local/bin/${NAME}-cli main.go
 	dpkg-deb --build release/$(NAME)-$(VERSION)
+
+test:
+	go test -v ./...
